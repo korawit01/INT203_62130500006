@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Basic Vue Js - HelloWorld App</title>
+
+
+
+  <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+
+  <!-- Using via Google Web Fonts -->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+
+
+  <!-- https://tailwindcss.com/docs/installation -->
+
+  <!-- Using Tailwind via CDN -->
+
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  
+
+
+  <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+
+  <!-- Vue CDN -->
+
+  <script src="https://unpkg.com/vue@next"></script>
+
+ 
+
+</head>
+
+
+
+<body class="bg-gray-100 h-full w-screen">
+  <div id="header" class="  bg-white h-14 border-solid border-2 border-gray-200 fixed w-full z-10 top-0">
+    <div id="nav" class="   max-w-screen-lg mx-auto h-14  pl-2 pt-2" >
+      <input  type="search" id="search" class=" absolute pr-6 ml-96 mt-2 bg-gray-100 focus:outline-none" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ค้นหา">
+      <button class="focus:outline-none">
+      <img class=" h-10 w-28 pt-2" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"> 
+    </button>
+      <button class="focus:outline-none">
+      <img class="absolute top-4 right-96 mr-80  h-7 w-7" src="https://cdn.discordapp.com/attachments/549440627994001428/805721614854914098/unknown.png">
+    </button>
+    <button class="focus:outline-none">
+      <img class="absolute top-4 right-96 mr-64 h-7 w-7" src="https://cdn.discordapp.com/attachments/549440627994001428/805726498060632064/unknown.png">
+    </button>
+    <button class="focus:outline-none">
+      <img class="absolute top-4 right-96 mr-52 h-7 w-7" src="https://cdn.discordapp.com/attachments/549440627994001428/805730353075585064/unknown.png">
+    </button>
+      <button class="focus:outline-none">
+      <img class="absolute top-4 right-96 mr-40 h-7 w-7" src="https://cdn.discordapp.com/attachments/549440627994001428/805730659591127043/unknown.png">
+    </button>
+    <button class="focus:outline-none">
+      <img class="absolute top-4 right-96 mr-28 h-7 w-7" src="https://cdn.discordapp.com/attachments/549440627994001428/805731006668865546/unknown.png">
+    </button>
+    </div>
+    
+  
+  </div>
+  
+
+
+
+  <div id="app" class="mt-10 h-screen max-w-screen-lg bg-gray-100 mx-auto ">
+    <div class="h-1"></div>
+    <div id="stories" class="bg-white h-28 w-3/5 mt-10 border-solid border-2 border-gray-200">
+      <div class="flex justify-center items-center space-x-5 mt-3">
+        <div class="flex flex-col justify-center items-center">
+            <div class=" bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full p-1 relative">
+                <button class="p-1 rounded-full bg-white focus:outline-none">
+                    <img class="h-12 w-12  rounded-full" src="https://cache.gmo2.sistacafe.com/images/uploads/summary/image/5043/1449106947-Instagrams-most-famous-cat-Nala16__605.jpg" >
+                </button>
+                
+            </div>
+            <p class="text-sm">korawit</p>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <div class=" bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full p-1 relative">
+              <button class="p-1 rounded-full bg-white focus:outline-none">
+                  <img class="h-12 w-12  rounded-full" src="https://www.sarakadee.com/blog/oneton/wp-content/uploads/2017/12/cat-cute-e1533862828469.jpg" >
+              </button>
+              
+          </div>
+          <p class="text-sm">cat</p>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <div class=" bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full p-1 relative">
+            <button class="p-1 rounded-full bg-white focus:outline-none">
+                <img class="h-12 w-12  rounded-full" src="https://www.akerufeed.com/wp-content/uploads/2020/08/%E0%B9%81%E0%B8%A1%E0%B8%A7%E0%B8%AA%E0%B9%89%E0%B8%A1-1.jpg" >
+            </button>
+            
+        </div>
+        <p class="text-sm">real cat</p>
+    </div>
+    <div class="flex flex-col justify-center items-center">
+      <div class=" bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full p-1 relative">
+          <button class="p-1 rounded-full bg-white focus:outline-none">
+              <img class="h-12 w-12  rounded-full" src="https://www.dogthailand.net/data/attachment/forum/month_1506/15060701228720fa343493548a.jpg" >
+          </button>
+          
+      </div>
+      <p class="text-sm">cat cat cat</p>
+  </div>
+  <div class="flex flex-col justify-center items-center">
+    <div class=" bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full p-1 relative">
+        <button class="p-1 rounded-full bg-white focus:outline-none">
+            <img class="h-12 w-12  rounded-full" src="https://cdn.readawrite.com/articles/642/641739/thumbnail/small.gif?3" >
+        </button>
+        
+    </div>
+    <p class="text-sm">kit cat</p>
+</div>
+<div class="flex flex-col justify-center items-center">
+  <div class=" bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full p-1 relative">
+      <button class="p-1 rounded-full bg-white focus:outline-none ">
+          <img class="h-12 w-12  rounded-full" src="https://content.shopback.com/th/wp-content/uploads/2019/08/11160112/42.jpg" >
+      </button>
+      
+  </div>
+  <p class="text-sm">meaw</p>
+</div>
+        
+      </div>
+    </div>
+    <div  class="bg-white h-auto w-3/5 mt-10 border-solid border-2 border-gray-200">
+      <div name="head" class="flex justify-start ... ">
+        <div class=" ml-4 mt-4 bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full p-1 relative">
+            <button class="p-1 rounded-full bg-white focus:outline-none ">
+                <img class="h-9 w-9  rounded-full" src="https://cache.gmo2.sistacafe.com/images/uploads/summary/image/5043/1449106947-Instagrams-most-famous-cat-Nala16__605.jpg" >
+            </button>
+            
+        </div>
+        <dl class="ml-4 mt-7">
+          <button class="focus:outline-none hover:underline">
+          <dt class="font-bold">korawit</dt>
+        </button>
+        </dl>
+        <button class="ml-96 focus:outline-none" >
+          <p class=" font-extrabold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</p>
+        </button>
+    </div>
+      <div class="mt-2">
+        <img src="https://i2.wp.com/travelblog.expedia.co.th/wp-content/uploads/2017/01/aurora-3.jpg?resize=750%2C437&ssl=1">
+      </div>
+      <div class=" mt-2 ml-2 justify-start ...">
+        <button class="h-8 w-8 focus:outline-none">
+        <img  src="https://cdn.icon-icons.com/icons2/2066/PNG/512/heart_icon_125260.png">
+      </button>
+      <button class="ml-3 h-8 w-8 focus:outline-none">
+        <img  src="https://cdn3.iconfinder.com/data/icons/instagram-18/512/191_Chat_Instagram_Interface-512.png">
+      </button>
+      <button class="ml-3 mr-12 h-8 w-8 focus:outline-none">
+        <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFQN5eIn4naoHuMP3lrbAxdYNUe2xvoiaOQ&usqp=CAU">
+      </button>
+      <button class="ml-96 h-8 w-8 focus:outline-none">
+        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAAAqKir4+PgyMjJRUVH8/Pzj4+OWlpbCwsLn5+fy8vIaGhqkpKRpaWnExMRkZGSBgYHOzs6Xl5e3t7eQkJAvLy87OzthYWEODg5YWFiJiYkZGRkhISFNTU17e3vX19dERESfn58nJyc4ODjo9PMlAAAEjklEQVR4nO2b20LqMBRELWCLiII3xPv1/7/xCAcNnbSQ7jaTPMx6BBq6sLuZ7NSTkzBGRW6MAs88FBnykaEMZZgeGcqw1fDhNC0P0Q0n44FH7sZ4IkMrMmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyDOa93+H5G94Vd72Oz92wvPwZ4bLsMULmhucf2yHuz+1D5G1YzXdjzCvzGFkbLgrHmXWQnA0vin0+jaNkbPhU1LmyDZOtYflYIKemW2quhrMvT7AovmaGkTI1vH5oEPzhuvtQeRreNvv9cNt5rCwN71oFi+Kp62AZGm6DWjtdI1x+huevBwWL4rVbhMvOsHpGo0984blThMvNcIE6k+pk9o0vLjqMmJnhBbosNwf7ldkhwuVl+IYm090bN/jGW/CYORn6Qc0tKLyr9zF01IwMZxOQWFWH3h0FRrh8DL2gtq4f5xdjWITLxtALalPvI1P8SFCEy8XQC2pNa3qvGEO6cHkYelfgqnlS92bGgAiXheGuo+ZYth0yxp/i42iEy8Gweulw8eHM+HIswmVgeAbnfKSt5hXjkS5cekMMat/H/ijVPRxxcfDjyQ2v4HTXx+9L4zUcczDCJTYsT+Fkw3ZhcGY81IVLazgbwamGdraxGA904ZIaYlAbhS9tq1X90IfWCJfSEINa8HJhQ4nF2BbhEhpiUPOD6GFwZmzpwiUz9IJa980lLMbmCJfKEDtqHUrQgcXY2IVLZFjBPSZgFmyiXMKfseF3SmOI15f9WQScGf1rPYkhBjXz/u6Jn2q9LlwKQwhqX/Y9+g1YjBjh+IZj6Kg99v4mmBlhWqUbYs+s3+NA/4GZcVWLcGzD6/rJ9CpBB9659iMc2RCCWo/HZOrMoE2wF+G4hhDU1n2e5gJgZnQXP9UQgtrNoN8Hxbj8fZ1oiB21YUrQATPjbxeOZwgdNVMQPcysPjPO37ev0gzhdrccsAT/wPXK9iphGUJQ67oWDAVi6qYLRzKEoDZ0CTqgGN84hmVZXwyG7vyZgGJ8Lcv4hvdVfT8lSgk6YM04ef9rIEcznM9rXxmrBB31Ynz++/pohnW6PChixdvaIBquYpagw38Ch2XYui84NN4+I8kwfgk6vGfFGIbxZsEm/GKMbXh0X3BovGKMbGjsiPYBY2pcwyHaMd2Z8gy5JehYkAwjrAVD2Y+p8QwTlKBjb2aMZpimBB3T2IapStCxiGo4SVeCjt3yLYph0hJ0jJexDFOXoGMaxzB9CTrOhjectzwjmopqMh94xLe47ZjulKH/wfAPOp09Qki6OF4AAAAASUVORK5CYII=">
+      </button>
+      </div>
+      <button class="focus:outline-none ">
+      <p class="ml-3 font-medium text-sm">ถูกใจ 14 คน</p>
+    </button>
+      <div class="flex justify-start ...">
+      <button class="focus:outline-none hover:underline">
+      <p class="ml-3 font-medium text-sm ">korawit </p>
+    </button>
+      <p class="ml-3 font-light text-sm">คิดถึง ทำได้แค่นั้นแหละ</p>
+    </div>
+    <p class="ml-3 font-thin text-xs text-gray-400">8 ชั่วโมงที่แล้ว</p>
+    <div class="mt-2  mb-1 border-t-2 border-gray-200 h-10 flex justify-start ...">
+      <button class="focus:outline-none">
+      <i class="ml-3 mt-2 material-icons">sentiment_satisfied_alt</i>
+    </button>
+      <input class="ml-3 text-gray-400 text-sm focus:outline-none" type="text" placeholder="เพิ่มความคิดเห็น">
+      <button class="ml-80 focus:outline-none">
+        <p class="text-blue-300">โพสต์</p>
+      </button>
+    </div>
+      
+      
+    </div>
+    <div  class="bg-white h-auto w-3/5 mt-10 border-solid border-2 border-gray-200">
+      <div name="head" class="flex justify-start ...">
+        <div class=" ml-4 mt-4 bg-gradient-to-tr from-yellow-400 to-pink-500 rounded-full p-1 relative">
+            <button class="p-1 rounded-full bg-white focus:outline-none ">
+                <img class="h-9 w-9  rounded-full" src="https://www.dogthailand.net/data/attachment/forum/month_1506/15060701228720fa343493548a.jpg" >
+            </button>
+            
+        </div>
+        <dl class="ml-4 mt-4">
+          <button class="focus:outline-none hover:underline">
+          <dt class="font-bold ">cat cat cat</dt>
+        </button>
+          <dt class="font-thin ">home</dt>
+        </dl>
+        <button class="ml-96 " >
+          <p class="font-extrabold focus:outline-none">...</p>
+        </button>
+    </div>
+      <div class="mt-2">
+        <img src="https://i.pinimg.com/originals/30/8a/5f/308a5f2b046167c7ae56f11d9238a718.jpg">
+      </div>
+      <div class=" mt-2 ml-2 justify-start ...">
+        <button class="h-8 w-8 focus:outline-none">
+        <img  src="https://cdn.icon-icons.com/icons2/2066/PNG/512/heart_icon_125260.png">
+      </button>
+      <button class="ml-3 h-8 w-8 focus:outline-none">
+        <img  src="https://cdn3.iconfinder.com/data/icons/instagram-18/512/191_Chat_Instagram_Interface-512.png">
+      </button>
+      <button class="ml-3 mr-12 h-8 w-8 focus:outline-none">
+        <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFQN5eIn4naoHuMP3lrbAxdYNUe2xvoiaOQ&usqp=CAU">
+      </button>
+      <button class="ml-96 h-8 w-8 focus:outline-none ">
+        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAAAqKir4+PgyMjJRUVH8/Pzj4+OWlpbCwsLn5+fy8vIaGhqkpKRpaWnExMRkZGSBgYHOzs6Xl5e3t7eQkJAvLy87OzthYWEODg5YWFiJiYkZGRkhISFNTU17e3vX19dERESfn58nJyc4ODjo9PMlAAAEjklEQVR4nO2b20LqMBRELWCLiII3xPv1/7/xCAcNnbSQ7jaTPMx6BBq6sLuZ7NSTkzBGRW6MAs88FBnykaEMZZgeGcqw1fDhNC0P0Q0n44FH7sZ4IkMrMmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyZCFDOzJkIUM7MmQhQzsyDOa93+H5G94Vd72Oz92wvPwZ4bLsMULmhucf2yHuz+1D5G1YzXdjzCvzGFkbLgrHmXWQnA0vin0+jaNkbPhU1LmyDZOtYflYIKemW2quhrMvT7AovmaGkTI1vH5oEPzhuvtQeRreNvv9cNt5rCwN71oFi+Kp62AZGm6DWjtdI1x+huevBwWL4rVbhMvOsHpGo0984blThMvNcIE6k+pk9o0vLjqMmJnhBbosNwf7ldkhwuVl+IYm090bN/jGW/CYORn6Qc0tKLyr9zF01IwMZxOQWFWH3h0FRrh8DL2gtq4f5xdjWITLxtALalPvI1P8SFCEy8XQC2pNa3qvGEO6cHkYelfgqnlS92bGgAiXheGuo+ZYth0yxp/i42iEy8Gweulw8eHM+HIswmVgeAbnfKSt5hXjkS5cekMMat/H/ijVPRxxcfDjyQ2v4HTXx+9L4zUcczDCJTYsT+Fkw3ZhcGY81IVLazgbwamGdraxGA904ZIaYlAbhS9tq1X90IfWCJfSEINa8HJhQ4nF2BbhEhpiUPOD6GFwZmzpwiUz9IJa980lLMbmCJfKEDtqHUrQgcXY2IVLZFjBPSZgFmyiXMKfseF3SmOI15f9WQScGf1rPYkhBjXz/u6Jn2q9LlwKQwhqX/Y9+g1YjBjh+IZj6Kg99v4mmBlhWqUbYs+s3+NA/4GZcVWLcGzD6/rJ9CpBB9659iMc2RCCWo/HZOrMoE2wF+G4hhDU1n2e5gJgZnQXP9UQgtrNoN8Hxbj8fZ1oiB21YUrQATPjbxeOZwgdNVMQPcysPjPO37ev0gzhdrccsAT/wPXK9iphGUJQ67oWDAVi6qYLRzKEoDZ0CTqgGN84hmVZXwyG7vyZgGJ8Lcv4hvdVfT8lSgk6YM04ef9rIEcznM9rXxmrBB31Ynz++/pohnW6PChixdvaIBquYpagw38Ch2XYui84NN4+I8kwfgk6vGfFGIbxZsEm/GKMbXh0X3BovGKMbGjsiPYBY2pcwyHaMd2Z8gy5JehYkAwjrAVD2Y+p8QwTlKBjb2aMZpimBB3T2IapStCxiGo4SVeCjt3yLYph0hJ0jJexDFOXoGMaxzB9CTrOhjectzwjmopqMh94xLe47ZjulKH/wfAPOp09Qki6OF4AAAAASUVORK5CYII=">
+      </button>
+      </div>
+      <button>
+      <p class="ml-3 font-medium text-sm">ถูกใจ 4,009 คน</p>
+    </button>
+      <div class="flex justify-start ...">
+        <button class="focus:outline-none hover:underline">
+      <p class="ml-3 font-medium text-sm">cat cat cat </p>
+    </button>
+      <p class="ml-3 font-light text-sm">หิวจัง</p>
+    </div>
+    <p class="ml-3 font-thin text-xs text-gray-400">1 วันที่แล้ว</p>
+    <div class="mt-2 mb-1 border-t-2 border-gray-200 h-10 flex justify-start ...">
+      <button class="focus:outline-none">
+      <i class="ml-3 mt-2 material-icons  ">sentiment_satisfied_alt</i>
+    </button>
+      <input class="ml-3 text-gray-400 text-sm focus:outline-none" type="text" placeholder="เพิ่มความคิดเห็น">
+      <button class="ml-80  focus:outline-none">
+        <p class="text-blue-300 ">โพสต์</p>
+      </button>
+    </div>
+      
+      
+    </div>
+    <div  class="w-auto h-auto  fixed  z-10 top-24 right-96 mr-10">
+      <div class="pt-4 ml-2 flex justify-start">
+        <button class="focus:outline-none">
+      <img class="rounded-full" src="https://cdn.discordapp.com/attachments/549440627994001428/805736967362314240/unknown.png">
+    </button>
+      <dl class="ml-5 mt-2 ">
+        <button class="focus:outline-none">
+        <dt class="font-bold">korawit.oum</dt>
+      </button>
+        <dt class="font-light text-gray-400">Oum.</dt>
+      </dl>
+      <button class="ml-32 mt-4 text-blue-500 focus:outline-none">
+      <p  >เปลี่ยน</p> 
+    </button>
+    </div>
+    <div class="pt-4 ml-2 flex justify-start">
+      <p class="mt-2 text-gray-400 font-extrabold" >แนะนำสำหรับคุณ</p>
+      <button class="ml-44 mt-2 font-medium text-black focus:outline-none">
+      <p  >ดูทั้งหมด</p>
+    </button>
+    </div>
+    <div class="pt-4 ml-2 flex justify-start">
+      <button class="focus:outline-none">
+    <img class="rounded-full h-10 w-10" src="https://f.ptcdn.info/140/062/000/pludw98tvynl155Ed9BU-o.jpg">
+  </button>
+    <dl class="ml-5 mt-2 ">
+      <button class="focus:outline-none hover:underline">
+      <dt class="font-bold">cat_abc</dt>
+    </button>
+      <dt class="font-light text-gray-400">แนะนำสำหรับคุณ</dt>
+    </dl>
+    <button class="ml-32 mt-4 text-blue-500 focus:outline-none">
+    <p >ติดตาม</p>
+  </button>
+  </div>
+  <div class="pt-4 ml-2 flex justify-start">
+    <button class="focus:outline-none">
+  <img class="rounded-full h-10 w-10" src="https://lh3.googleusercontent.com/proxy/E6ogPPS0RdFeZ2L7eJa56-nyAEBjNYBz-YqPp_CAITb6MuYxqOj-kw4pkHI8SJdEjiIlpJ0VEspHRHTdKAerwyzrckIgu5Qpo7qt3ShWtvXjQe0WJO12gShVCmJS17uQHvBcSgU">
+</button>
+  <dl class="ml-5 mt-2 ">
+    <button class="focus:outline-none hover:underline">
+    <dt class="font-bold ">catza55+</dt>
+  </button>
+    <dt class="font-light text-gray-400">แนะนำสำหรับคุณ</dt>
+  </dl>
+  <button class="ml-32 mt-4 text-blue-500 focus:outline-none">
+  <p >ติดตาม</p>
+</button>
+</div>
+<div class="pt-4 ml-2 flex justify-start">
+  <button class="focus:outline-none">
+<img class="rounded-full h-10 w-10" src="https://i.pinimg.com/564x/34/e5/dc/34e5dc2a42fb9ad4edc911978dddc30a.jpg">
+</button>
+<dl class="ml-5 mt-2 ">
+  <button class="focus:outline-none hover:underline">
+  <dt class="font-bold">fatcat</dt>
+</button>
+  <dt class="font-light text-gray-400">แนะนำสำหรับคุณ</dt>
+</dl>
+<button class="ml-32 mt-4 text-blue-500 focus:outline-none">
+<p >ติดตาม</p>
+</button>
+</div>
+<div class="pt-4 ml-2 flex justify-start">
+  <button class="focus:outline-none">
+<img class="rounded-full h-10 w-10" src="https://pbs.twimg.com/profile_images/1102217973782073344/s-NCLFT2_400x400.jpg">
+</button>
+<dl class="ml-5 mt-2 ">
+  <button class="focus:outline-none hover:underline">
+  <dt class="font-bold">lazy_cat</dt>
+</button>
+  <dt class="font-light text-gray-400">แนะนำสำหรับคุณ</dt>
+</dl>
+<button class="ml-32 mt-4 text-blue-500 focus:outline-none">
+<p >ติดตาม</p>
+</button>
+</div>
+<div class="pt-4 ml-2 flex justify-start">
+      <button class="focus:outline-none">
+    <img class="rounded-full h-10 w-10" src="https://i.pinimg.com/originals/8b/a2/59/8ba259fd4112d667c607166326d320ae.jpg">
+  </button>
+    <dl class="ml-5 mt-2 ">
+      <button class="focus:outline-none hover:underline">
+      <dt class="font-bold">cat007</dt>
+    </button>
+      <dt class="font-light text-gray-400">แนะนำสำหรับคุณ</dt>
+    </dl>
+    <button class="ml-32 mt-4 text-blue-500 focus:outline-none">
+    <p >ติดตาม</p>
+  </button>
+  </div>
+  <div class="ml-2 mt-10 flex justify-start text-xs text-gray-400" >
+    
+  <ul class="flex justify-start ">
+    <button class="focus:outline-none">
+    <li >เกี่ยวกับ</li>
+  </button>
+  <button class="focus:outline-none">
+    <li class="ml-5 list-disc">ความช่วยเหลือ</li>
+  </button>
+  <button class="focus:outline-none">
+    <li class="ml-5 list-disc">ข่าวประชาสัมพันธ์</li>
+  </button>
+  <button class="focus:outline-none">
+    <li class="ml-5 list-disc">API</li>
+  </button>
+  <button class="focus:outline-none">
+    <li class="ml-5 list-disc">งาน</li>
+  </button>  
+  </ul>
+  </div>
+  <div class="ml-2 mt-2 flex justify-start text-xs text-gray-400" >
+  <ul class="flex justify-start ">
+    <button class="focus:outline-none">
+    <li>ความเป็นส่วนตัว</li>
+  </button>
+  <button class="focus:outline-none">
+    <li class="ml-5 list-disc">ข้อกำหนด</li>
+  </button>
+  <button class="focus:outline-none">
+    <li class="ml-5 list-disc">ตำแหน่งที่ตั้ง</li>
+  </button>
+  <button class="focus:outline-none">
+    <li class="ml-5 list-disc">บัญชียอดนิยม</li>
+  </button>
+  </ul>
+</div>
+  <div class="ml-2 mt-2 flex justify-start text-xs text-gray-400" >
+  <ul class="flex justify-start ">
+    <button class="focus:outline-none">
+    <li class=" ">แฮชแท็ก</li>
+  </button>
+  <button class="focus:outline-none active:bg-blue-400 ">
+    <li class="ml-5 list-disc">ภาษา</li>
+  </button>
+  </ul>
+</div>
+<p class="ml-2 mt-2 text-xs text-gray-400">© 2021 INSTAGRAM FROM FACEBOOK</p>    
+</div>
+
+
+  </div>
+
+
+
+  <!-- my main.js -->
+
+  <script src="./main.js"></script>
+
+</body>
+
+
+
+</html>
